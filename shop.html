@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>WGT ORDL O</title>
+        <link rel="stylesheet" href="shop.css">
+    </head>
+        <body>
+            <header id="section-1">
+                <a href="#" class="logo">TITLE</a>
+                <ul>
+                    <li><a href="index.html#section-1">Home</a></li>
+                    <li><a href="index.html#section-2">Who</a></li>
+                    <li><a href="index.html#section-3">What</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </header>
+            <section>
+                <img src="img/shop layer 0.png" id="layer-0">
+                <img src="img/shop layer 1.png" id="layer-1">
+                <img src="img/shop layer 2.png" id="layer-2">
+            </section>
+
+            <div id="section-2" class="section">
+            </div>
+
+            <footer>
+
+            </footer>
+            <script>
+                let layer_0 = document.getElementById('layer-0');
+                let layer_1 = document.getElementById('layer-1');
+
+                window.addEventListener('scroll', function() {
+                    let value = window.scrollY;
+                    layer_0.style.top = value + 'px';
+                    layer_1.style.top = value * 0.8 + 'px';
+
+                })
+            </script>
+        </body>
+</html>
