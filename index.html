@@ -14,5 +14,30 @@
                     <li><a href="#">Shop</a></li>
                 </ul>
             </header>
+            <section>
+                <img src="layer 0.png" id="layer-0">
+                <img src="layer 1.png" id="layer-1">
+                <img src="layer 2.png" id="layer-2">
+                <img src="layer 3.png" id="layer-3">
+            </section>
+            <div id="section-2">
+                <h2>Who</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+
+            <script>
+                let layer_0 = document.getElementById('layer-0')
+                let layer_1 = document.getElementById('layer-1')
+                let layer_2 = document.getElementById('layer-2')
+                let layer_3 = document.getElementById('layer-3')
+
+                window.addEventListener('scroll', function() {
+                    let value = window.scrollY;
+                    layer_0.style.top = value + 'px';
+                    layer_1.style.top = value * 0.8 + 'px';
+                    layer_2.style.top = value * 0.4 + 'px';
+                })
+            </script>
         </body>
 </html>
