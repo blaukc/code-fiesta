@@ -12,6 +12,7 @@
                     <li><a href="index.html#section-2">Who</a></li>
                     <li><a href="index.html#section-3">What</a></li>
                     <li><a href="#">Shop</a></li>
+                    <li><a href="events.html">Events</a></li>
                 </ul>
             </header>
             <section>
@@ -21,6 +22,70 @@
             </section>
 
             <div id="section-2" class="section">
+                <div id="nav">
+                    <ul>
+                        <li><a onclick="chineseFood()">Chinese</a></li>
+                        <li><a onclick="malayFood()">Malay</a></li>
+                        <li><a onclick="indianFood()">Indian</a></li>
+                        <li><a onclick="drinks()">Drinks</a></li>
+                        <li><a onclick="others()">Others</a></li>
+                    </ul>
+                </div>
+                <div id="chinese-food" class="food">
+                    <div id="chinese-food-1" class="food-box"><img src="img/chinese-food/1.jpg"></div>
+                    <div id="chinese-food-2" class="food-box"><img src=""></div>
+                    <div id="chinese-food-3" class="food-box"><img src=""></div>
+                    <div id="chinese-food-4" class="food-box"><img src=""></div>
+                    <div id="chinese-food-5" class="food-box"><img src=""></div>
+                    <div id="chinese-food-6" class="food-box"><img src=""></div>
+                    <div id="chinese-food-7" class="food-box"><img src=""></div>
+                    <div id="chinese-food-8" class="food-box"><img src=""></div>
+                    <div id="chinese-food-9" class="food-box"><img src=""></div>
+                </div>
+                <div id="malay-food" class="food">
+                    <div id="malay-food-1" class="food-box"><img src="img/malay-food/1.jpg"></div>
+                    <div id="malay-food-2" class="food-box"><img src=""></div>
+                    <div id="malay-food-3" class="food-box"><img src=""></div>
+                    <div id="malay-food-4" class="food-box"><img src=""></div>
+                    <div id="malay-food-5" class="food-box"><img src=""></div>
+                    <div id="malay-food-6" class="food-box"><img src=""></div>
+                    <div id="malay-food-7" class="food-box"><img src=""></div>
+                    <div id="malay-food-8" class="food-box"><img src=""></div>
+                    <div id="malay-food-9" class="food-box"><img src=""></div>
+                </div>
+                <div id="indian-food" class="food">
+                    <div id="indian-food-1" class="food-box"><img src="img/indian-food/1.jpg"></div>
+                    <div id="indian-food-2" class="food-box"><img src=""></div>
+                    <div id="indian-food-3" class="food-box"><img src=""></div>
+                    <div id="indian-food-4" class="food-box"><img src=""></div>
+                    <div id="indian-food-5" class="food-box"><img src=""></div>
+                    <div id="indian-food-6" class="food-box"><img src=""></div>
+                    <div id="indian-food-7" class="food-box"><img src=""></div>
+                    <div id="indian-food-8" class="food-box"><img src=""></div>
+                    <div id="indian-food-9" class="food-box"><img src=""></div>
+                </div>
+                <div id="drinks" class="food">
+                    <div id="drink-1" class="food-box"><img src="img/drinks/1.jpg"></div>
+                    <div id="drink-2" class="food-box"><img src=""></div>
+                    <div id="drink-3" class="food-box"><img src=""></div>
+                    <div id="drink-4" class="food-box"><img src=""></div>
+                    <div id="drink-5" class="food-box"><img src=""></div>
+                    <div id="drink-6" class="food-box"><img src=""></div>
+                    <div id="drink-7" class="food-box"><img src=""></div>
+                    <div id="drink-8" class="food-box"><img src=""></div>
+                    <div id="drink-9" class="food-box"><img src=""></div>
+                </div>
+                <div id="others" class="food">
+                    <div id="others-1" class="food-box"><img src="img/others/1.jpg"></div>
+                    <div id="others-2" class="food-box"><img src=""></div>
+                    <div id="others-3" class="food-box"><img src=""></div>
+                    <div id="others-4" class="food-box"><img src=""></div>
+                    <div id="others-5" class="food-box"><img src=""></div>
+                    <div id="others-6" class="food-box"><img src=""></div>
+                    <div id="others-7" class="food-box"><img src=""></div>
+                    <div id="others-8" class="food-box"><img src=""></div>
+                    <div id="others-9" class="food-box"><img src=""></div>
+                </div>
             </div>
 
             <footer>
@@ -30,12 +95,53 @@
                 let layer_0 = document.getElementById('layer-0');
                 let layer_1 = document.getElementById('layer-1');
 
+
                 window.addEventListener('scroll', function() {
                     let value = window.scrollY;
                     layer_0.style.top = value + 'px';
                     layer_1.style.top = value * 0.8 + 'px';
-
                 })
+
+                function chineseFood() {
+                    document.getElementById("chinese-food").style.visibility = "visible";
+                    document.getElementById("malay-food").style.visibility = "hidden";
+                    document.getElementById("indian-food").style.visibility = "hidden";
+                    document.getElementById("drinks").style.visibility = "hidden";
+                    document.getElementById("others").style.visibility = "hidden";
+                }
+
+                function malayFood() {
+                    document.getElementById("chinese-food").style.visibility = "hidden";
+                    document.getElementById("malay-food").style.visibility = "visible";
+                    document.getElementById("indian-food").style.visibility = "hidden";
+                    document.getElementById("drinks").style.visibility = "hidden";
+                    document.getElementById("others").style.visibility = "hidden";
+                }
+
+                function indianFood() {
+                    document.getElementById("chinese-food").style.visibility = "hidden";
+                    document.getElementById("malay-food").style.visibility = "hidden";
+                    document.getElementById("indian-food").style.visibility = "visible";
+                    document.getElementById("drinks").style.visibility = "hidden";
+                    document.getElementById("others").style.visibility = "hidden";
+                }
+
+                function drinks() {
+                    document.getElementById("chinese-food").style.visibility = "hidden";
+                    document.getElementById("malay-food").style.visibility = "hidden";
+                    document.getElementById("indian-food").style.visibility = "hidden";
+                    document.getElementById("drinks").style.visibility = "visible";
+                    document.getElementById("others").style.visibility = "hidden";
+                }
+
+                function others() {
+                    document.getElementById("chinese-food").style.visibility = "hidden";
+                    document.getElementById("malay-food").style.visibility = "hidden";
+                    document.getElementById("indian-food").style.visibility = "hidden";
+                    document.getElementById("drinks").style.visibility = "hidden";
+                    document.getElementById("others").style.visibility = "visible";
+                }
+
             </script>
         </body>
 </html>
