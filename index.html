@@ -5,39 +5,64 @@
         <link rel="stylesheet" href="main.css">
     </head>
         <body>
-            <header>
+            <header id="section-1">
                 <a href="#" class="logo">TITLE</a>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Who</a></li>
-                    <li><a href="#">What</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li><a href="#section-1">Home</a></li>
+                    <li><a href="#section-2">Who</a></li>
+                    <li><a href="#section-3">What</a></li>
+                    <li><a href="#section-4">Shop</a></li>
                 </ul>
             </header>
             <section>
-                <img src="layer 0.png" id="layer-0">
-                <img src="layer 1.png" id="layer-1">
-                <img src="layer 2.png" id="layer-2">
-                <img src="layer 3.png" id="layer-3">
-                <img src="layer 4.png" id="layer-4">
+                <img src="img/layer 0.png" id="layer-0">
+                <img src="img/layer 1.png" id="layer-1">
+                <img src="img/layer 2.png" id="layer-2">
+                <img src="img/layer 3.png" id="layer-3">
+                <img src="img/layer 4.png" id="layer-4">
             </section>
             <div id="section-2" class="section">
                 <h2>Who</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <img src="trishaw.png" id="trishaw">
+                <img src="img/trishaw.png" id="trishaw">
             </div>
             <div id="section-3" class="section">
                 <h2>What</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+                <img src="img/drinks.png" id="drinks">
             </div>
+            <div id="section-4" class="section">
+                <a href="shop.html">Shop</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img src="img/prata.png" id="prata">
+                <img src="img/wantonmee.png" id="wantonmee">
+                <img src="img/nasilemak.png" id="nasilemak">
+                <img src="img/durian.png" id="durian">
+                <img src="img/chickenrice.png" id="chickenrice">
+                <img src="img/meegoreng.png" id="meegoreng">
+                <img src="img/laksa.png" id="laksa">
+                <img src="img/briyani.png" id="briyani">
+            </div>
+            <footer>
+
+            </footer>
 
             <script>
-                let layer_0 = document.getElementById('layer-0')
-                let layer_1 = document.getElementById('layer-1')
-                let layer_2 = document.getElementById('layer-2')
-                let layer_3 = document.getElementById('layer-3')
-                let trishaw = document.getElementById('trishaw')
+                let layer_0 = document.getElementById('layer-0');
+                let layer_1 = document.getElementById('layer-1');
+                let layer_2 = document.getElementById('layer-2');
+                let layer_3 = document.getElementById('layer-3');
+                let trishaw = document.getElementById('trishaw');
+                let drinks = document.getElementById('drinks');
+                let section_3 = document.getElementById('section-3');
+                let wantonmee = document.getElementById('wantonmee');
+                let nasilemak = document.getElementById('nasilemak');
+                let prata = document.getElementById('prata');
+                let durian = document.getElementById('durian');
+                let briyani = document.getElementById('briyani');
+                let laksa = document.getElementById('laksa');
+                let meegoreng = document.getElementById('meegoreng');
+                let chickenrice = document.getElementById('chickenrice');
 
                 window.addEventListener('scroll', function() {
                     let value = window.scrollY;
@@ -47,6 +72,24 @@
                     layer_3.style.top = value * 0.4 + 'px';
                     trishaw.style.top = value * 0.2 + 'px';
                     trishaw.style.right = value * 0.5 + 'px';
+                    drinks.style.left = value * 0.27 + 'px';
+                    wantonmee.style.top = value * 0.02 + 'px';
+                    wantonmee.style.left = value * 0.15 + 'px';
+                    nasilemak.style.top = value * 0.04 + 'px';
+                    nasilemak.style.right = value * 0.15 + 'px';
+                    prata.style.bottom = value * 0.01 + 'px';
+                    prata.style.left = value * 0.15 + 'px';
+                    durian.style.bottom = value * 0.02 + 'px';
+                    durian.style.right = value * 0.15 + 'px';
+                    briyani.style.top = value * 0.02 + 'px';
+                    briyani.style.left = value * 0.05 + 'px';
+                    laksa.style.top = value * 0.04 + 'px';
+                    laksa.style.right = value * 0.05 + 'px';
+                    meegoreng.style.bottom = value * 0.01 + 'px';
+                    meegoreng.style.left = value * 0.05 + 'px';
+                    chickenrice.style.bottom = value * 0.02 + 'px';
+                    chickenrice.style.right = value * 0.05 + 'px';
+
                 })
             </script>
         </body>
