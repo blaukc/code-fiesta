@@ -43,7 +43,13 @@ header {
     z-index: 50;
 }
 
+header img {
+    position: absolute;
+    width: 5vw;
+}
+
 header .logo {
+    margin-left: 5vw;
     font-family: 'Gotham';
     font-weight: 200;
     font-size: 3vw;
@@ -64,7 +70,7 @@ header ul li {
     font-family: 'Gotham';
     font-weight: 200;
     font-size: 1.5vw;
-    margin-left: 20px;
+    margin-left: 2vw;
     letter-spacing: 3px;
     color: #FFFFFF;
 }
@@ -114,7 +120,7 @@ section img {
     font-weight: 200;
     font-size: 2vw;
     text-align: center;
-    padding: 0 2em 0 2em;
+    padding: 0 15vw 0 15vw;
     z-index: 10;
 }
 
